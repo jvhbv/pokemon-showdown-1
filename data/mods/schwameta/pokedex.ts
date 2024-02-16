@@ -6,9 +6,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 	},
 	regigigas: {
 		interit: true,
-		types: ["Ground"],
-		abilities: {0: "Slow Start", H: "Tough Claws"},
-		baseStats: {hp: 110, atk: 170, def: 110, spa: 80, spd: 110, spe: 100},
+		abilities: {0: "Slow Start", H: "Cute Charm"},
 	},
 	revavroom: {
 		inherit: true,

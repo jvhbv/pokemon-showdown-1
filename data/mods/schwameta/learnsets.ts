@@ -31,6 +31,7 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 	},
 	regigigas: {
 		learnset:{
+			inherit: true,
 			swordsdance: ["9L1"],
 			stealthrock: ["9L1"],
 		},

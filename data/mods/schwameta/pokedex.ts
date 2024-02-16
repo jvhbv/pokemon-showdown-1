@@ -1,8 +1,8 @@
 export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 	regigigas: {
 		inherit: true,
-		types: ["Fairy", "Dragon"],
-		abilities: {0: "Protosmosis", H: "Cute Charm"},
+		types: ["Ground"],
+		abilities: {0: "Slow Start", H: "Tough Claws"},
 	},
 	screamtail: {
 		inherit: true,

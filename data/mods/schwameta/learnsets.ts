@@ -29,6 +29,12 @@ export const Learnsets: {[k: string]: LearnsetData} = {
 			grassknot: ["9L1"],
 		},
 	},
+	regigigas: {
+		learnset:{
+			swordsdance: ["9L1"],
+			stealthrock: ["9L1"],
+		},
+	},
 	magearnaoriginal: {
 		learnset: {
 			agility: ["8M"],

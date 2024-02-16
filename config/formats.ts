@@ -518,6 +518,13 @@ export const Formats: FormatList = [
 		},
 	},
 	{
+		name: "[Gen 9] Schwameta",
+		desc: `Test.`,
+		mod: 'schwameta',
+		ruleset: ['Standard'],
+		banlist: ['AG'],
+	},
+	{
 		name: "[Gen 1] Modern Gen 1",
 		desc: `A Gen 1 solomod where all Pok&eacute;mon and moves from future generations are legal.`,
 		threads: [

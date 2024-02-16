@@ -18,7 +18,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 		weightkg: 3000,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
-		requiredItem: "Red Orb",
+		requiredItem: "Mantle Fragment",
 		battleOnly: "Regigigas",
 	},
 	screamtail: {

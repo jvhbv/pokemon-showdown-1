@@ -56,33 +56,28 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	mantlefragment: {
 		name: "Mantle Fragment",
 		spritenum: 187,
-		fling: {
-			basePower: 120,
-		},
-		onTakeItem(item, pokemon, source) {
-			if (source?.baseSpecies.num === 486 || pokemon.baseSpecies.num === 486) {
-				return false;
-			}
-			return true;
-		},
 		onSwitchIn(pokemon) {
-			if (pokemon.baseSpecies.baseSpecies === 'Regigigas') {
-				this.add('-item', pokemon, 'Mantle Fragment');
-				this.add('-anim', pokemon, "Cosmic Power", pokemon);
-				this.add('-message', `${pokemon.name}'s Mantle Fragment caused a Primal Reversion!`);
+			if (pokemon.isActive && pokemon.baseSpecies.name === 'Regigigas') {
+				this.queue.insertChoice({choice: 'runPrimal', pokemon: pokemon});
 			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Regigigas-Primal', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseSpecies.baseSpecies === 'Regigigas') return false;
+			return true;
 		},
 		onBasePowerPriority: 15,
 		onBasePower(basePower, user, target, move) {
 			if (user.baseSpecies.num === 486 && ['Rock', 'Steel', 'Ice'].includes(move.type)) {
-				return this.chainModify([6144, 4096]);
+				return this.chainModify([6044, 4096]);
 			}
 		},
-		forcedForme: "Regigigas-Primal",
 		itemUser: ["Regigigas"],
-		num: -1001,
+		num: -1050,
 		gen: 9,
-		desc: "Regigigas: Undergoes primal reversion. Rock, Steel, Ice moves 1.5x power.",
+		desc: "Regigigas: Undergoes primal reversion. Rock, Ice, Steel moves 1.5x power.",
 	},
 	seginstarshard: {
 		name: "Segin Star Shard",

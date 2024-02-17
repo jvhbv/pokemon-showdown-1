@@ -12,6 +12,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 		baseSpecies: "Regigigas",
 		forme: "Primal",
 		types: ["Ground", "Fighting"],
+		gender: "N",
 		baseStats: {hp: 110, atk: 170, def: 140, spa: 110, spd: 140, spe: 100},
 		abilities: {0: "Adaptability"},
 		heightm: 4.6,
@@ -19,7 +20,6 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Mantle Fragment",
-		battleOnly: "Regigigas",
 	},
 	screamtail: {
 		inherit: true,

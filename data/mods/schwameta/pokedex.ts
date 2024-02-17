@@ -2,7 +2,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 	regigigas: {
 		inherit: true,
 		types: ["Ground"],
-		abilities: {0: "Slow Start", H: "Tough Claws"},
+		abilities: {0: "Tough Claws"},
 		otherFormes: ["Regigigas-Primal"],
 		formeOrder: ["Regigigas", "Regigigas-Primal"],
 	},
@@ -15,7 +15,7 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 110, atk: 170, def: 140, spa: 110, spd: 140, spe: 100},
 		abilities: {0: "Adaptability"},
 		heightm: 4.6,
-		weightkg: 3000,
+		weightkg: 999.9,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Mantle Fragment",
